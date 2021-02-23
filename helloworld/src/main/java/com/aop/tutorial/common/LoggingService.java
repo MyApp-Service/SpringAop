@@ -14,7 +14,7 @@ public class LoggingService {
 	
 	@Before("args(name)")
 	public void useforArgs(String name) {
-		System.out.println("Calling set Method:---"+name);
+		System.out.println("Calling set Method---:---"+name);
 	}
 	
 	@Pointcut("within(com.aop.tutorial.beans.Mobile)")
