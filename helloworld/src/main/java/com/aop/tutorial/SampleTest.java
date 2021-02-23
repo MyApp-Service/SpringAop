@@ -20,7 +20,7 @@ public class SampleTest {
 		 * Laptop lap = (Laptop)context.getBean("laptop");
 		 * System.out.println(lap.getName());
 		 */
-		System.out.println("From git Repository....");
+		//System.out.println("From git Repository....");
 		Devices devices = context.getBean("devices",Devices.class);
 		devices.getMobile().setName("Manikandan...");
 		System.out.println(devices.getMobile().getName());
