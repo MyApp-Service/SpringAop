@@ -9,7 +9,7 @@ import com.aop.tutorial.beans.Mobile;
 
 public class SampleTest {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		/*
@@ -22,10 +22,10 @@ public class SampleTest {
 		 */
 		//System.out.println("From git Repository....");
 		Devices devices = context.getBean("devices",Devices.class);
-		devices.getMobile().setName("Manikandan...");
+		//devices.getMobile().setName("Manikandan...");
 		System.out.println(devices.getMobile().getName());
-		devices.getLaptop().setName("IBM");
-		
+		//devices.getLaptop().setName("IBM");
+		devices.getLaptop().setMethod("Dhinesh");
 	}
 
 }

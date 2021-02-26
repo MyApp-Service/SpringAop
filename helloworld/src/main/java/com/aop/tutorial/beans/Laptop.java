@@ -17,6 +17,11 @@ public class Laptop {
 		this.type = type;
 	}
 	
+	public void setMethod(String name) {
+		throw( new RuntimeException());
+		//return name.toUpperCase();
+	}
+	
 	
 
 }
